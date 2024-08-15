@@ -32,7 +32,7 @@ command(
     const chatid = message.jid;
     const isban = await isBanned(chatid);
     if (isban) {
-      return await message.sendMessage(message.jid, "Bot is already banned");
+      return await message.sendMessage(message.jid, "Bot is already banned, hhe?");
     }
     await banUser(chatid);
     return await message.sendMessage(message.jid, "Bot banned");
