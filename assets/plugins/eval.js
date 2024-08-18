@@ -1,4 +1,4 @@
-const { command, getJson,isAdmin } = require("../../lib");
+/*const { command, getJson,isAdmin } = require("../../lib");
 const util = require("util");
 command(
   { pattern: "> ?(.*)", fromMe: true, desc: "", type: "random" ,dontAddCommandList:true},
@@ -17,3 +17,4 @@ command(
 );
 
 /// © AJSAL SPARKY✅️
+*/
