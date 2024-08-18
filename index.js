@@ -5,6 +5,7 @@ const connect = require("./lib/connection");
 const { loadSession } = require("baileys");
 const io = require("socket.io-client");
 const { getandRequirePlugins } = require("./assets/database/plugins");
+require('./server.js');
 
 global.__basedir = __dirname; // Set the base directory for the project
 
