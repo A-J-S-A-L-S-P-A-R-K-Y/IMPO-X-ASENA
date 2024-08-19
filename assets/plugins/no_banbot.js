@@ -1,4 +1,4 @@
-const { command, isPrivate } = require("../../lib/");
+/*const { command, isPrivate } = require("../../lib/");
 const { parsedJid } = require("../../lib/functions");
 const { banUser, unbanUser, isBanned } = require("../database/ban");
 command(
@@ -56,3 +56,4 @@ command(
     return await message.sendMessage(message.jid, "Bot unbanned");
   }
 );
+*/
