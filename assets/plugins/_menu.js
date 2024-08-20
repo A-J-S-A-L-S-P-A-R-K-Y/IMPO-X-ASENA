@@ -5,7 +5,7 @@ const { hostname } = require("os");
 
 command(
   {
-    pattern: "menu",
+    pattern: "help",
     fromMe: isPrivate,
     desc: "Show All Commands",
     dontAddCommandList: true,
@@ -29,15 +29,7 @@ Description: ${i.desc}\`\`\``);
       let [date, time] = new Date()
         .toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })
         .split(",");
-      let menu = `╭━━━━━ᆫ ${BOT_NAME} ᄀ━━━
-┃ ⎆  *OWNER*:  ${OWNER_NAME}
-┃ ⎆  *PREFIX*: ${prefix}
-┃ ⎆  *HOST NAME*: ${hostname().split("-")[0]}
-┃ ⎆  *DATE*: ${date}
-┃ ⎆  *TIME*: ${time}
-┃ ⎆  *COMMANDS*: ${plugins.commands.length} 
-┃ ⎆  *UPTIME*: ${clockString(process.uptime())} 
-╰━━━━━━━━━━━━━━━\n`;
+      let menu = `${BOT_NAME}\n\n\n`;
       let cmnd = [];
       let cmd;
       let category = [];
@@ -65,14 +57,14 @@ Description: ${i.desc}\`\`\``);
       });
 
       menu += `\n`;
-      menu += `_🔖Send ${prefix}menu <command name> to get detailed information of a specific command._\n*📍Eg:* _${prefix}menu plugin_`;
+      menu += `_This is a Media Downloader WhatsApp Bot Created By Team Sparky_`;
       return await message.sendMessage(message.jid,menu);
     }
   }
 );
 
 
-command(
+/*command(
   {
     pattern: "list",
     fromMe: isPrivate,
@@ -103,4 +95,4 @@ command(
     menu += ``;
     return await message.reply(menu);
   }
-);
+);*/
