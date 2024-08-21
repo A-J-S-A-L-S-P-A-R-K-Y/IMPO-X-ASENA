@@ -5,6 +5,7 @@ const {
   isIgUrl,
   isPrivate,
   getJson,
+  getBuffer
 } = require("../../lib/");
 command(
   {
@@ -40,3 +41,24 @@ command(
     }
   }
 );
+
+    command(
+    {
+      on: "text",
+      fromMe: isPrivate,
+      desc: "autodl",
+      type: "user",
+    },
+    async (message, match) => {
+        if (match.startsWith("https://www.instagram.com")) {
+			try {
+				let response = await getJson(`https://viper.xasena.me/api/insta?url=${match}`);
+			for (let i of response.data) {
+				await message.sendFile(i.url);
+			}
+			} catch (err) {
+        return;
+			}
+		}
+    }
+  );
