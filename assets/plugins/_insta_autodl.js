@@ -1,4 +1,5 @@
 const {
+    command,
     getJson,
    isPrivate,    
     getBuffer
