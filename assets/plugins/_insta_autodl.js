@@ -1,14 +1,14 @@
 const {
     command,
     getJson,
-   isPrivate,    
+   isPublic,    
     getBuffer
   } = require("../../lib/");
      
     command(
     {
       on: "text",
-      fromMe: isPrivate,
+      fromMe: isPublic,
       desc: "autodl",
       type: "user",
     },
