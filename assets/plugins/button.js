@@ -2,7 +2,7 @@ const { command, isPrivate } = require("../../lib");
 
 command(
   {
-    pattern: "button",
+    pattern: "hey",
     fromMe: true,
     desc: "send a button message",
     usage: "#button",
@@ -12,77 +12,42 @@ command(
     let data = {
       jid: message.jid,
       button: [
-        {
-          type: "list",
-          params: {
-            title: "Button 1",
-            sections: [
-              {
-                title: "Button 1",
-                rows: [
-                  {
-                    header: "title",
-                    title: "Button 1",
-                    description: "Description 1",
-                    id: "#menu",
-                  },
-                ],
-              },
-            ],
-          },
-        },
+
         {
           type: "reply",
           params: {
-            display_text: "MENU",
-            id: "#menu",
+            display_text: "ᴍᴇɴᴜ",
+            id: "help",
           },
         },
-        {
+
+        ///////✅️✅️✅️✅️😂/////
+
+        
+        
+////////❤️❤️❤️❤️
+
+
+{
           type: "url",
           params: {
-            display_text: "Neeraj-x0",
-            url: "https://www.neerajx0.xyz/",
-            merchant_url: "https://www.neerajx0.xyz/",
+            display_text: "ᴏᴡɴᴇʀ",
+            url: "https://wa.me/919539412641?text=_Hey !_",
+            merchant_url: "https://wa.me/919539412641?text=_Hey !_",
           },
         },
-        {
-          type: "address",
-          params: {
-            display_text: "Address",
-            id: "message",
-          },
-        },
-        {
-          type: "location",
-          params: {},
-        },
-        {
-          type: "copy",
-          params: {
-            display_text: "copy",
-            id: "123456789",
-            copy_code: "message",
-          },
-        },
-        {
-          type: "call",
-          params: {
-            display_text: "Call",
-            phone_number: "123456789",
-          },
-        },
+
       ],
       header: {
-        title: "X-Asena",
+        title: "𝙈𝙚𝙙𝙞𝙖 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙚𝙧 _↓_💗",
         subtitle: "WhatsApp Bot",
         hasMediaAttachment: false,
       },
       footer: {
-        text: "Interactive Native Flow Message",
+        text: "© ᴍᴇᴅɪᴀ ɢᴇᴛ",
       },
       body: {
-        text: "Interactive Message",
+        text: "\n_Hey !_\n_i'm a instagaram Video/Photo Downloader Whatsapp Bot._\n_Just paste a instagaram url for download_\n",
       },
     };
     return await message.sendMessage(message.jid, data, {}, "interactive");
