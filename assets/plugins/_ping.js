@@ -21,7 +21,7 @@ command(
 
 
 //const ajsal = message.pushName;
-command(
+/*command(
   {
     pattern: "alive",
     fromMe: isPublic,
@@ -29,12 +29,13 @@ command(
     type: "user",
   },
   async (message, match) => {
-    /*const start = new Date().getTime();
+    const start = new Date().getTime();
     await message.sendMessage(message.jid, "```Ping!```");
-    const end = new Date().getTime();*/
+    const end = new Date().getTime();
     return await message.sendMessage(
       message.jid,
       `𝘏𝘦𝘺!,\n _i'm here for you🙂❤️_`
     );
   }
 );
+*/
