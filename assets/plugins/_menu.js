@@ -2,10 +2,12 @@ const plugins = require("../../lib/plugins");
 const { command, isPrivate, clockString, pm2Uptime } = require("../../lib");
 const { OWNER_NAME, BOT_NAME } = require("../../config");
 const { hostname } = require("os");
+const readMore = String.fromCharCode(8206).repeat(4001);
+
 
 command(
   {
-    pattern: "xhelp",
+    pattern: "help",
     fromMe: isPrivate,
     desc: "Show All Commands",
     dontAddCommandList: true,
@@ -57,8 +59,10 @@ Description: ${i.desc}\`\`\``);
       });*/
 
       menu += `\n`;
-      menu += `_This is a insta Downloader WhatsApp Bot._\n_You can download Instagram Video/Photo with lighting speed. Just Paste the url_`;
-      return await message.sendMessage(message.jid,menu);
+      menu += `_This is a insta Downloader WhatsApp Bot._\n_You can download Instagram Video/Photo with lighting speed. Just Paste the url_\n ${readMore}`;
+
+      menu += `\n\n\n\n*Commamds*\n-----------\n➤ ping\n➤ help\n➤ alive\n➤ auto_insta_downloader\n`;
+    return await message.sendMessage(message.jid,menu);
     }
   }
 );
@@ -96,3 +100,4 @@ Description: ${i.desc}\`\`\``);
     return await message.reply(menu);
   }
 );*/
+
