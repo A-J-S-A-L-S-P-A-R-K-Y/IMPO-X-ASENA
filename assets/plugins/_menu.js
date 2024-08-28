@@ -5,7 +5,7 @@ const { hostname } = require("os");
 
 command(
   {
-    pattern: "help",
+    pattern: "xhelp",
     fromMe: isPrivate,
     desc: "Show All Commands",
     dontAddCommandList: true,
@@ -29,7 +29,7 @@ Description: ${i.desc}\`\`\``);
       let [date, time] = new Date()
         .toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })
         .split(",");
-      let menu = `${BOT_NAME}\n\n\n`;
+      let menu = `-----➤ *_Media Get💗_*`;
       let cmnd = [];
       let cmd;
       let category = [];
@@ -46,7 +46,7 @@ Description: ${i.desc}\`\`\``);
           if (!category.includes(type)) category.push(type);
         }
       });
-      cmnd.sort();
+     /* cmnd.sort();
       category.sort().forEach((cmmd) => {
         menu += `\n\t⦿---- *${cmmd.toUpperCase()}* ----⦿\n`;
         let comad = cmnd.filter(({ type }) => type == cmmd);
@@ -54,10 +54,10 @@ Description: ${i.desc}\`\`\``);
           menu += `\n⛥  _${cmd.trim()}_ `;
         });
         menu += `\n`;
-      });
+      });*/
 
       menu += `\n`;
-      menu += `_This is a Media Downloader WhatsApp Bot Created By Team Sparky_`;
+      menu += `_This is a insta Downloader WhatsApp Bot._\n_You can download Instagram Video/Photo with lighting speed. Just Paste the url_`;
       return await message.sendMessage(message.jid,menu);
     }
   }
