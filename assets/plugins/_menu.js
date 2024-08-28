@@ -1,5 +1,5 @@
 const plugins = require("../../lib/plugins");
-const { command, isPrivate, clockString, pm2Uptime } = require("../../lib");
+const { command, isPublic, clockString, pm2Uptime } = require("../../lib");
 const { OWNER_NAME, BOT_NAME } = require("../../config");
 const { hostname } = require("os");
 const readMore = String.fromCharCode(8206).repeat(4001);
@@ -8,7 +8,7 @@ const readMore = String.fromCharCode(8206).repeat(4001);
 command(
   {
     pattern: "help",
-    fromMe: isPrivate,
+    fromMe: isPublic,
     desc: "Show All Commands",
     dontAddCommandList: true,
     type: "user",
