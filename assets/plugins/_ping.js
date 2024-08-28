@@ -18,3 +18,23 @@ command(
   }
 );
 
+
+
+const ajsal = message.pushName;
+command(
+  {
+    pattern: "alive",
+    fromMe: isPublic,
+    desc: "To check ping",
+    type: "user",
+  },
+  async (message, match) => {
+    /*const start = new Date().getTime();
+    await message.sendMessage(message.jid, "```Ping!```");
+    const end = new Date().getTime();*/
+    return await message.sendMessage(
+      message.jid,
+      `𝘏𝘦𝘺 ${ajsal},\n _i'm here for you🙂❤️_`
+    );
+  }
+);
