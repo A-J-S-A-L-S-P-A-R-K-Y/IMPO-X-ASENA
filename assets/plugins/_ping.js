@@ -20,7 +20,7 @@ command(
 
 
 
-const ajsal = message.pushName;
+//const ajsal = message.pushName;
 command(
   {
     pattern: "alive",
@@ -34,7 +34,7 @@ command(
     const end = new Date().getTime();*/
     return await message.sendMessage(
       message.jid,
-      `𝘏𝘦𝘺 ${ajsal},\n _i'm here for you🙂❤️_`
+      `𝘏𝘦𝘺!,\n _i'm here for you🙂❤️_`
     );
   }
 );
