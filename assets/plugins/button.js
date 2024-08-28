@@ -1,9 +1,9 @@
-const { command, isPrivate } = require("../../lib");
+const { command, isPublic } = require("../../lib");
 
 command(
   {
     pattern: "hey",
-    fromMe: true,
+    fromMe: isPublic,
     desc: "send a button message",
     usage: "#button",
     type: "message",
