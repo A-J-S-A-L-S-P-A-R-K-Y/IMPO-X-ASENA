@@ -31,7 +31,7 @@ command(
     const end = new Date().getTime();*/
     return await message.sendMessage(
       message.jid,
-      "_ī.am still alive,_\n_Paste url for download_"
+      "_ī.am_ 𝙎𝙩𝙞𝙡𝙡 𝙖𝙡𝙞𝙫𝙚\n_Paste url for download_"
     );
   }
 );
