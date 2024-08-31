@@ -18,4 +18,22 @@ command(
   }
 );
 
+command(
+  {
+    pattern: "alive",
+    fromMe: isPublic,
+    desc: "To check ping",
+    type: "user",
+  },
+  async (message, match) => {
+    /*const start = new Date().getTime();
+    await message.sendMessage(message.jid, "```Ping!```");
+    const end = new Date().getTime();*/
+    return await message.sendMessage(
+      message.jid,
+      "_ī.am still alive,_\n_Paste url for download_"
+    );
+  }
+);
+
 
