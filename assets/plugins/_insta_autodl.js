@@ -46,3 +46,52 @@ await message.reply('_Error !_');
 		}
     }
   );
+
+
+
+command({
+
+    pattern: 'insta ?(.*)',
+    fromMe: true,
+    desc: 'Send all media from Instagram URL.',
+    type: 'downloader'
+
+}, async (message, match, client) => {
+
+    const instaUrl = match;
+
+    if (!instaUrl) {
+
+        return await message.reply('_Enter a Instagram Url !_');
+
+    }
+
+    try {
+
+      
+
+        const mediaUrl = `https://api.eypz.c0m.in/aio?url=${match}`;
+        const mediaData = await getJson(mediaUrl);
+        console.log('Media Data:', mediaData);
+        if (!mediaData || !mediaData.medias || mediaData.medias.length === 0) {
+            return await message.reply('_Inavlid Url !_');
+
+        }
+
+        for (const media of mediaData.medias) {
+
+            console.log('Sending Media:', media.url);
+
+            await message.sendFile(media.url);
+
+        }
+
+    } catch (error) {
+
+        console.error('Error fetching media:', error);
+
+        await message.reply('_Error !_');
+
+    }
+
+});
