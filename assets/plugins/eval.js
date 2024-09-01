@@ -1,5 +1,6 @@
 const {
     command,
+	getJson,
   } = require("../../lib/");
   const util = require("util");
 
