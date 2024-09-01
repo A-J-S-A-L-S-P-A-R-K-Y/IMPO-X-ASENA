@@ -31,9 +31,9 @@ command(
 {
           type: "url",
           params: {
-            display_text: "ᴏᴡɴᴇʀ",
-            url: "https://wa.me/919539412641?text=_Hey !_",
-            merchant_url: "https://wa.me/919539412641?text=_Hey !_",
+            display_text: "ᴡᴩ-ᴄʜᴀɴɴᴇʟ",
+            url: "https://whatsapp.com/channel/0029Va97vPqGU3BKjEyFQX3l",
+            merchant_url: "https://whatsapp.com/channel/0029Va97vPqGU3BKjEyFQX3l",
           },
         },
 
