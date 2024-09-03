@@ -61,7 +61,7 @@ Description: ${i.desc}\`\`\``);
       menu += `\n`;
       menu += `_This is a insta Downloader WhatsApp Bot._\n_You can download Instagram Video/Photo with lighting speed. Just Paste the url_\n ${readMore}`;
 
-      menu += `\n\n\n\n*Commamds*\n-----------\n➤ ping\n➤ help\n➤ alive\n➤ auto_insta_downloader\n`;
+      menu += `\n\n\n\n*Commamds*\n-----------\n➤ ping\n➤ help\n➤ alive\n➤ insta\n`;
     return await message.sendMessage(message.jid,menu);
     }
   }
