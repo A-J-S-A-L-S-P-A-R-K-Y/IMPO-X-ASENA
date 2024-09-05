@@ -28,7 +28,7 @@ if (!arr.includes(message.participant)) return message.reply("𝙃𝙚𝙮, 𝙮
 			try {
 			
 
-const mediaUrl = `https://api.eypz.c0m.in/aio?url=${match}`;
+const mediaUrl = `https://viper.xasena.me/api/insta?url=${match}`;
 
         const mediaData = await getJson(mediaUrl);
 for (const media of mediaData.medias) {
