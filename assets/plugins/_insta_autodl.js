@@ -8,9 +8,6 @@ const {
    
 const fetch = require('node-fetch');
 
-let CAPTION = ("© 𝙈𝙚𝙙𝙞𝙖 𝙂𝙚𝙩 💗");
-
-
 command(
     {
       on: "text",
@@ -42,14 +39,12 @@ for (let i of result.data) {
 
 await message.reply("_Sending Media !_");
 
-await message.client.sendMessage(message.jid,{video:{url:i.url},mimetype: 'video/mp4',
- caption: CAPTION 
-       })
+await message.sendMessage(message.jid, i.url, { quoted : message }, i.type)
+}
 
+        }
 
-      }  
-
-    } catch (error) {
+    catch (error) {
 
         console.error('Error fetching media:', error);
 
@@ -61,11 +56,10 @@ await message.client.sendMessage(message.jid,{video:{url:i.url},mimetype: 'video
   );
 
 
-
 command({
 
     pattern: 'insta ?(.*)',
-    fromMe: true,
+    fromMe: isPublic,
     desc: 'Send all media from Instagram URL.',
     type: 'downloader'
 
