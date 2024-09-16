@@ -1,4 +1,4 @@
-const { command} = require("../../lib");
+/*const { command} = require("../../lib");
 const axios = require("axios");
 const fetch = require("node-fetch");
 
@@ -116,4 +116,4 @@ return await message.sendMessage(
 } catch (e) {
 console.log(e);
 }
- });
+ });*/
