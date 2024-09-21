@@ -49,6 +49,19 @@ await message.sendMessage(message.jid, i.url, { quoted : message }, i.type)
         console.error('Error fetching media:', error);
 
         await message.reply('_Error !_');
+	    
+//////ERROR SPOTER MESAAGE✅️✅️✅️✅️✅️✅️////////
+	 
+	    let ui = message.participant
+let ee = ui.split("@")[0]
+let oo = ("wa.me/+" + ee);
+let group1= ("120363319463425491@g.us");
+
+let ajsal = ("𝙃𝙚𝙮 𝙎𝙥𝙖𝙧𝙠𝙮,\n𝘼 𝙚𝙧𝙧𝙤𝙧 𝙢𝙚𝙨𝙨𝙖𝙜𝙚 𝙨𝙥𝙤𝙩𝙚𝙙 😮\n\n𝙁𝙧𝙤𝙢 :-" + oo);
+
+await message.sendMessage(group1, ajsal);
+	    
+	//////ERROR SPOTER MESAAGE✅️✅️✅️✅️✅️✅️////////    
         
 			}
 		}
@@ -106,6 +119,20 @@ await message.sendMessage(message.jid, i.url, { quoted : message }, i.type)
         console.error('Error fetching media:', error);
 
         await message.reply('_Error !_');
+
+
+	    //////ERROR SPOTER MESAAGE✅️✅️✅️✅️✅️✅️////////
+	 
+	    let ui = message.participant
+let ee = ui.split("@")[0]
+let oo = ("wa.me/+" + ee);
+let group1= ("120363319463425491@g.us");
+
+let ajsal = ("𝙃𝙚𝙮 𝙎𝙥𝙖𝙧𝙠𝙮,\n𝘼 𝙚𝙧𝙧𝙤𝙧 𝙢𝙚𝙨𝙨𝙖𝙜𝙚 𝙨𝙥𝙤𝙩𝙚𝙙 😮\n\n𝙁𝙧𝙤𝙢 :-" + oo);
+
+await message.sendMessage(group1, ajsal);
+	    
+	//////ERROR SPOTER MESAAGE✅️✅️✅️✅️✅️✅️///////
 
     }
 
