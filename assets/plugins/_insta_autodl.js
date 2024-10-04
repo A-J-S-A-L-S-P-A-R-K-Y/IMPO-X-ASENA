@@ -168,7 +168,7 @@ if (!arr.includes(message.participant)) return message.reply("𝙃𝙚𝙮, 𝙮
 
     if (!instaUrl) {
 
-        return await message.reply(`_Enter a Instagram id!_\n*Eg:- Story media._get*`);
+        return await message.reply(`_Enter a Instagram username!_\n*Eg:- Story media._get*`);
 
     }
 
@@ -193,7 +193,7 @@ await message.sendMessage(message.jid, i.url, { quoted : message }, i.type)
 
         console.error('Error fetching media:', error);
 
-        await message.reply(`_Error !_\n\n_Maybe that account is private or there is no story!_`);
+        await message.reply(`_Error !_\n\n_No data available. The user might have a private account or the username is invalid.!_`);
 
 //////ERROR SPOTER MESAAGE✅️✅️✅️✅️✅️✅️////////
 	 
