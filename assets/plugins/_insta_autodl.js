@@ -143,8 +143,8 @@ await message.sendMessage(group1, ajsal);
 
 command({
 
-    pattern: 'igstory ?(.*)',
-    fromMe: true,
+    pattern: 'story ?(.*)',
+    fromMe: isPublic,
     desc: 'Send all media from Instagram URL.',
     type: 'downloader'
 
