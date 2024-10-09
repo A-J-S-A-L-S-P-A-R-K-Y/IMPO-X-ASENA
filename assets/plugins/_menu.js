@@ -59,7 +59,7 @@ Description: ${i.desc}\`\`\``);
       });*/
 
       menu += `\n`;
-      menu += `_This is a insta Downloader WhatsApp Bot._\n_You can download Instagram Video/Photo with lighting speed. Just Paste the url_\n ${readMore}`;
+      menu += `_I'm a Meida Downloader WhatsApp Bot._\n_You can download YouTube,Instagram Video/Photo with lighting speed. Just Paste the url_\n ${readMore}`;
 
       menu += `\n\n\n\n*Commamds*\n-----------\n➤ ping\n➤ help\n➤ alive\n➤ insta\n\n\n_Still Under Developing....!_`;
     return await message.sendMessage(message.jid,menu);
