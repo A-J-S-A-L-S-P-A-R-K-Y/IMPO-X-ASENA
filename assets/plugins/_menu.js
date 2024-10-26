@@ -31,7 +31,7 @@ Description: ${i.desc}\`\`\``);
       let [date, time] = new Date()
         .toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })
         .split(",");
-      let menu = `-----➤ *_Media Get💗_*`;
+      let menu = `----➤ *_Media Get💗_*`;
       let cmnd = [];
       let cmd;
       let category = [];
