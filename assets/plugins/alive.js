@@ -6,7 +6,7 @@ command({
     fromMe : true,
     desc: "To check ping",
     type: "user",
-}, async ({ client, msg }) => {
+}, async ( message, match) => {
     let pong = await client.sendMessage(message.jid, { text: "_Checking..._" }, { quoted: message });
     return await client.sendMessage(message.jid, { text: `_I'm Still alive.!_\n_Tyep help for help😌_`, edit: pong.key }, { quoted: message });
 });
