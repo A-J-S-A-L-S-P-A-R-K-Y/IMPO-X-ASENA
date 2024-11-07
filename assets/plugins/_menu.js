@@ -58,11 +58,13 @@ Description: ${i.desc}\`\`\``);
         menu += `\n`;
       });*/
 
+      
       menu += `\n`;
-      menu += `_I'm a Meida Downloader WhatsApp Bot._\n_You can download YouTube,Instagram Video/Photo with lighting speed. Just Paste the url_\n ${readMore}`;
+      menu += `_I'm a Meida Downloader WhatsApp Bot._\n_You can download Medias with lighting speed. Just Paste the url_\n ${readMore}`;
 
-      menu += `\n\n\n\n*Commamds*\n-----------\n➤ ping\n➤ help\n➤ alive\n➤ insta\n\n\n_Still Under Developing....!_`;
-    return await message.sendMessage(message.jid,menu);
+      menu += `\n\n\n\n*_Commands_*\n-----------\n_➤ ping - for check bot speed_\n_➤ help - help desk_\n_➤ alive - bot alive message_\n_➤ insta - download reels/posts_\n_➤ story - download story_\n_➤ ytv - Download YouTube videos_\n_➤ video - Download YouTube videos_\n_➤ yts - YouTube search_\n_➤ spotify - spotify search_\n\n*_Auto downloaders_*\n-----------\n_• Instagram reels/post/story_\n_• YouTube audio/mp3_\n_• Spotify_\n\n\n_Still Under Developing...! 🛠️_`;
+
+      return await message.sendMessage(message.jid,menu);
     }
   }
 );
