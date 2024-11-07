@@ -1,12 +1,15 @@
-const { Axl } = require("../lib/");
+const plugins = require("../../lib/plugins");
+const { command, isPublic } = require("../../lib");
 
-Axl({
+
+command({
     pattern: "alive",
+    fromMe : true,
     desc: "To check ping",
     type: "user",
 }, async ({ client, msg }) => {
-    let pong = await client.sendMessage(msg.chat, { text: "_Checking..._" }, { quoted: msg });
-    return await client.sendMessage(msg.chat, { text: `_I'm Still alive !_\n_Tyep help for help😌_`, edit: pong.key }, { quoted: msg });
+    let pong = await client.sendMessage(message.jid, { text: "_Checking..._" }, { quoted: message });
+    return await client.sendMessage(message.jid, { text: `_I'm Still alive !_\n_Tyep help for help😌_`, edit: pong.key }, { quoted: message });
 });
 
 
