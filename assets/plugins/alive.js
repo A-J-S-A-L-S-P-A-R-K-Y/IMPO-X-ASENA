@@ -1,4 +1,3 @@
-const plugins = require("../../lib/plugins");
 const { command, isPublic } = require("../../lib");
 
 
