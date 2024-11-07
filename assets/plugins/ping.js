@@ -1,12 +1,10 @@
 const { Axl } = require("../lib/");
 
 Axl({
-    pattern: "ping",
+    pattern: "alive",
     desc: "To check ping",
     type: "user",
 }, async ({ client, msg }) => {
-    const start = new Date().getTime();
     let pong = await client.sendMessage(msg.chat, { text: "_Checking..._" }, { quoted: msg });
-    const end = new Date().getTime();
-    return await client.sendMessage(msg.chat, { text: `_Response in_ _${end - start}_ _Ms_`, edit: pong.key }, { quoted: msg });
+    return await client.sendMessage(msg.chat, { text: `_I'm Still alive !_\n_Tyep help for help😌_`, edit: pong.key }, { quoted: msg });
 });
