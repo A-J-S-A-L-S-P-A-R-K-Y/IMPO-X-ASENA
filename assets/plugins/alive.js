@@ -1,7 +1,7 @@
-const { command, isPublic } = require("../../lib");
+/*const { command, isPublic } = require("../../lib");
 
 
-/*command({
+command({
     pattern: "alive",
     fromMe : true,
     desc: "To check ping",
@@ -10,7 +10,7 @@ const { command, isPublic } = require("../../lib");
     let pong = await client.sendMessage(message.jid, { text: "_Checking..._" }, { quoted: message });
     return await client.sendMessage(message.jid, { text: `_I'm Still alive.!_\n_Tyep help for help😌_`, edit: pong.key }, { quoted: message });
 });
-*/
+
 
 command(
   {
@@ -54,4 +54,4 @@ return await message.sendMessage(jid,match,{
     mentions: men 
 }); 
 
-  });
+  });*/
